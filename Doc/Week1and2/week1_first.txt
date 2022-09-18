@@ -1,0 +1,360 @@
+
+CoreJava Concepts :
+
+Serializable interface -- > it is called marker interface
+
+Oops:
+
+1)Encasulation -- wrapping up of fields and method in single unit of class
+POJO --> plain old java objects
+
+a) making a fields private
+b) allow them to access fields through getter and setter methods
+c) matainability of code ,flexibiity and extensibility of code
+
+2)Inheritance
+benefits :
+a)reusability of code
+b)to achieve polymorphism
+
+relationship types of inheritance:
+1)IS-A -- 
+Class Car {
+//engine
+//name
+//milage
+}
+class Bmw extends Car{
+
+}
+
+2)HAS-A
+class Car {
+//engine
+//milage
+//car name
+}
+class Indica extends Car {
+
+}
+class Maruti extends Car {
+
+}
+class Tesla extends Car {
+ElectriCar elctric;
+}
+
+class ElectriCar{
+
+}
+
+multiple inheritance -- dimond issue 
+Miltple level inheritance 
+
+3)Abstraction and Interface
+
+
+abstarct class A {
+
+A(){
+
+}
+void test(){ print "hello"}
+
+abstract void test1();//abstarct method
+
+}
+class B extedns A {
+
+void test1(){ print "test1 in b "; }
+
+ }
+
+A a = new A();// cannot create object for abstract class
+a.test();
+
+A a1 = new B();
+a1.test1()
+
+inteface :
+
+interface A {
+default void test(){
+print "hello";
+}
+
+void test1();
+}
+interface B extedns A{
+void test3();
+}
+class D {
+void test4();
+}
+class C extends D implements A,B {
+
+}
+
+abstract - > we can have method with body and without body
+interface --> we can have method with body from java8 and without body
+
+in abstract we cannot achieve multiple inheritance
+in interface we can achieve multiple inheritance
+
+
+4)Polymorphism
+
+one name many forms
+
+types of polymorphism :
+1)compile time polymorphism or static polymorphism
+Method Overloading
+
+void add(int i);
+void add(int i,int j);
+void add(double i,int j);
+
+add(10,30);
+
+2)runtime polymorphism or dynamic polymorphism
+Method Overriding
+class A {
+add(){print "a";}
+
+}
+
+class B extends A {
+add(){ print "b" }
+
+void test(){ print "test" };
+}
+
+A a = new A();
+a.add();
+B b = new B();
+b.add();
+b.test();
+
+two requiremnt with respect to B object:
+1)i want to make sure ,i am trying to call only the methods
+defined in super class
+2)invoke logic of subclass 
+
+
+A a1 = new B(); //  upcasting --> converting subclass object to super class
+a1.add();//print b
+//a1.test();
+
+
+
+B b2 = new A();//direct downcasting --> converting superclass obj to sub class
+//direct downcasting is not allowed 
+
+
+B b1 =(B) a1; // downcasting --> direct down casting not allowed,
+              // only upcasted object can be downcasted
+b1.test();
+
+types of object/reference casting :
+1)Down casting
+2)Upcasting 
+-------------------------------------------------------------------
+
+
+J2SE -- > Core java concepts 
+J2EE -- > core java concepts and advanced features 
+
+core
+
+java 18
+java 8
+java 11
+
+types of application:
+1)stand alone or desktop app
+2)web application
+3)Mobile app
+
+core java -- > desktop application  - an application which installed and executed in 
+same machine or system
+j2ee -- web application
+
+layers of application :
+
+1)presentation layer / front end -- html,html5,javascript,jquery
+, php ,css,Angular,reactjs, nextjs,backbonejs,vuejs
+
+2)Business layer / middle end 
+any programming language or server side scripting language like nodejs
+
+3)database layer / backend 
+Mysql,Oracle,postgresql, cassandra ,mongodb,graphql, elastic serach,dynamoBD
+db2,bigquery
+
+
+Webapplication :
+
+desktop : 
+web application : web needed 
+ --- > website /url
+----> http,https,ftp,smtp 
+---> browser / client
+---> server
+
+
+http :
+https:
+
+http methods or http verbs:
+
+CRUD OPERATION
+1)GET
+2)POST
+3)PUT 
+4)DELETE
+5)HEAD
+6)OPTIONS
+7)TRACE
+8)CONNECT
+
+Request and Reponse life cycle
+
+client --> http -- > sending a request
+server --> response 
+
+clinet sent get reqeust to server 
+
+mobile data 
+
+
+200 status code -- success 
+404 status code -- 
+403 forbidden error code -- 
+401 --
+
+500 -- 
+503
+501
+
+------------------------------------------------------------
+
+core java project -- file -- > java project --> project name
+
+project
+ --->src
+     -->package
+         ---> java files(.java)
+---->bin
+     --> .class files 
+
+run as java application 
+-------------------
+
+web aplication :
+
+file --> dynamic project
+server -- > Tomcat,Weblogic
+databse --> mysql
+front end --> html,html5, jsp
+
+
+Git/svn/bitbucket --> code repository tool
+
+---> git branch -b "name"
+---> git checkout -b "name"
+---> git clone url
+---> git pull
+---> git add .
+---> git commit -m "business logic"
+---> git push
+
+
+Servlets
+Jdbc
+hibernate
+jsp
+
+web application project structure:
+
+BasicWebLearn
+--->src
+     ---> package name
+       ---> java files
+--->WebContent
+   ---> Meta-inf
+   --->WEB-INF
+      --->lib
+      --->web.xml (DD or Deployment discriptor)
+
+default port number for tomcat is 8080
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

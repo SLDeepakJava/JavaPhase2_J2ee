@@ -1,0 +1,88 @@
+
+Servlet Program
+--> can understand the http request and reponse
+
+
+servlet is a small java program which listens to the http reqeust and response
+
+Servlet is a interface 
+
+all server will have a servlet
+
+
+Servlet is a interface and has below methods:
+destroy
+getServletConfig
+getServletInfo
+init(ServletConfig arg0)
+service
+
+----------------------
+Servlet lifecycle methods:
+
+1)init --> its called only for the first reqeust
+2)service --> its called on all reqeust
+3)destroy --> its called on shutdown or stop of the tomcat sever
+
+servlet is a small java program that runs without a web server
+
+servlet receives and respond to the reuqest sent from
+client 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------
+
+j2ee :
+
+html 
+javascript
+jsp
+servlet
+jdbc
+hibernate
+tomcat server
+
+---------------
+1) download tomcat
+--> go inside tomcat folder ---> bin ---> in cmd run ./startup.sh
+--> to verify tomcat -- > go to browser type http://localhost:8080
+
+2)downlad tomcat:
+go to eclipse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
