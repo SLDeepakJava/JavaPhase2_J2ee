@@ -1,0 +1,171 @@
+
+servlet config --
+servlet context --
+
+servlet filter -- if we wnt to pre-processing and post-processing 
+logic 
+
+anyclass which implemts Filter interface 
+init
+doFilter -->
+destroy
+
+
+diff GET and POST
+
+username : value
+password : value
+
+reqeust.getparatmer("username")
+
+
+
+index.html file:
+
+username
+paswrod 
+
+---> servlet 1
+
+---> servlet 2
+
+http -- its stateless protocol
+
+sesssion -- interval time given to user to use the application
+session time is completed then the data will be lost 
+
+<input type="pasword" value="password" hidden>
+
+
+user login --> wil open session will give him the time 5min
+----> he can do waht ever he want 
+---> after the time elaspsed then the user will unable visit the site
+user will logout automatically or user data will be lost afte the 
+session time and he need to re-login 
+
+
+how to communicate from html to servelt ?
+how to communicate between html to html ?
+how to communicate between servlet to servlet ?
+
+
+reqeust object : reqeustDispatcher
+  ---> forward
+  ---> include
+
+response : sendRedirect
+
+-------------------------------------------------------
+
+how to crete servlet
+how to read the reqeust data
+store the data
+communicate between html to servlet
+servlet to servlet
+servlet to html
+http methods
+servlet config
+servlet context
+
+-------------
+
+html --> servlet ---> database(mysql)
+	   
+JDBC -- java database connectivity
+
+connector
+ --> mysql-connector
+ --> oracletj connector
+
+servelt java langauge
+database mysql --> c programming
+
+----------------------------------------------------
+
+Mysql database
+--->username : root
+--->password : 
+
+Employee data in a excel
+
+two mysql database:
+1)command line interface
+2)GUI (mysql work bench, sqldeveloper)
+
+create a database with Employees name
+
+this database can have multple tables
+
+Create a table name Employee
+
+Employee    department	hr_employee 
+-------
+id 
+name
+mobnumber
+
+int
+bigint
+varchar(200)
+
+--> create database "database name"
+--> use "database name"
+--> create table "tablename" ( column1 int primary key,column2 varchar(255),
+column3 int);
+--> insert table "employee" values(11,'deepak','889678687')
+-->select * from employee;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
