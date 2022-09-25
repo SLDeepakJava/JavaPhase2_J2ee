@@ -1,0 +1,47 @@
+Servlets
+creating web application
+add a tomcat server and run application from eclipse
+ways to create a servlet
+servlet heirarchy
+layers of web application
+http methods
+index.html page 
+life cycle of servlet
+web.xml --> DD
+how to communicate from brower to servlet
+how to communicate from servlet to browser
+
+
+ServletConfig
+ServletContext
+
+send request
+read reqeust
+return the reponse
+
+send reqeust
+---apply pre-processing logic
+ ------read the reqeust from servlet
+---------apply post-processing logic
+-----------return the reponse
+
+
+
+accountdashboard?userid=jhon
+ -- request
+    ---filter processing this will check if userid is not null
+       -- allow to go to the accounddashboard page otherwise
+     ---------block
+
+accountdashboard
+-----reqeust
+      ---- filter processing here userid is null
+           ---- then it will block
+
+
+
+
+
+
+
+
